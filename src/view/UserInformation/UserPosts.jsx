@@ -33,7 +33,7 @@ function UserPosts() {
       {isSidebar && <Sidebar/>}
       {userPosts.length>0 ? 
       <div className={`p-3 h-screen ${isSidebar ? 'w-[70%] relative left-[30%]' : 'w-screen'} flex flex-col justify-center items-center`}>
-          <div className={`text-2xl font-bold my-3 ${darktheme ? 'text-slate-50':'text-slate-900'}`}>Below are you posts</div>
+          <div className={`pt-8 text-2xl font-bold my-3 ${darktheme ? 'text-slate-50':'text-slate-900'}`}>Below are you posts</div>
           <div className={`p-3 rounded-lg h-[80%] ${darktheme ? 'bg-slate-900':'bg-sky-300'} grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-3 overflow-y-auto justify-center items-center `}>
             {
               userPosts.map((postItem)=>{

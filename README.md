@@ -69,4 +69,14 @@ Welcome to the documentation for My Blog website, a simple and user-friendly blo
 
 - By clicking your user info on the navbar, you will open the side bar. In there, there is a profile section. Clicking it will get you your information.
 - There is an update button to change your user information. But before that, you will have to type in your password, so that it's more secure.
-- Below that section, there is another section to change your password. Include your own password and then you can include your new password. This will make changes to the database and get you a new password.
+- Below that section, there is another section to change your password. Include your old password and then you can include your new password. This will make changes to the database and get you a new password.
+
+### Additional Tips
+
+- Report any issues or provide feedback through my email - htutoonaing221b@gmail.com or [GitHub repository](https://github.com/nicholasNaing).
+
+### Support and Feedback
+
+If you have any questions, encounter issues, or have suggestions for improvements, feel free to reach out to me. Your feedback is valuable in enhancing the user experience and it will be a great help to me as a starting developer.
+
+Thank you for visiting my little website project. Happy blogging!

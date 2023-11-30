@@ -142,7 +142,7 @@ function Profile() {
             </div>}
 
             { validateProfilePassword ?
-            <div className={`flex flex-col justify-center items-center pt-12 ${isSidebar? 'relative w-[100%] sm:w-[60%] md:w-[70%] lg:w-[70%] sm:left-[40%] md:left-[30%] lg:left-[30%]':'w-[100%]'} h-screen`}>
+            <div className={`flex flex-col justify-center items-center pt-16 ${isSidebar? 'relative w-[100%] sm:w-[60%] md:w-[70%] lg:w-[70%] sm:left-[40%] md:left-[30%] lg:left-[30%]':'w-[100%]'} h-screen`}>
                 <form onSubmit={handleEditProfile} className={`registerForm flex flex-col gap-3 border-2 rounded-md p-3 ${darktheme ? 'border-slate-900 bg-white bg-opacity-20':'border-sky-300 bg-black bg-opacity-10'} ${isSidebar ? 'w-[90%] lg:w-[70%]':'w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%]'}`}>
                     <h1 className="font-bold text-center text-xl">Edid User Information</h1>
                     <img className={`w-[70px] h-[70px] rounded-[50%] relative left-[50%] translate-x-[-50%]`} src={updateImage ? updateImage : userInfo.profile_url} alt="profile_image"/>
@@ -168,7 +168,7 @@ function Profile() {
                     </div>
                 </form>
             </div> :
-            <div className={`flex flex-col justify-center items-center ${isSidebar? 'relative w-[100%] sm:w-[60%] md:w-[70%] lg:w-[70%] sm:left-[40%] md:left-[30%] lg:left-[30%]':'w-[100%]'} h-screen`}>
+            <div className={`pt-8 flex flex-col justify-center items-center ${isSidebar? 'relative w-[100%] sm:w-[60%] md:w-[70%] lg:w-[70%] sm:left-[40%] md:left-[30%] lg:left-[30%]':'w-[100%]'} h-screen`}>
                 <div className={`${isSidebar ? 'w-[90%] lg:w-[70%]':'w-[90%] sm:w-[80%] md:w-[60%] lg:w-[40%]'} flex flex-col mt-4`}>
                     <div className={`border-2 p-2 ${darktheme ? 'border-slate-900 bg-white bg-opacity-20':'border-sky-300 bg-black bg-opacity-10'} rounded-md`} >
                         <div className="flex flex-col gap-3 mb-3">
