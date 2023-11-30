@@ -73,7 +73,10 @@ Welcome to the documentation for My Blog website, a simple and user-friendly blo
 
 ### Additional Tips
 
-- Report any issues or provide feedback through my email - htutoonaing221b@gmail.com or [GitHub repository](https://github.com/nicholasNaing).
+- Report any issues or provide feedback through my
+  email - [Email Account](htutoonaing221b@gmail.com)
+  facebook - [Facebook Account](https://www.facebook.com/saw.nigamwee/)
+  or [GitHub repository](https://github.com/nicholasNaing).
 
 ### Support and Feedback
 
