@@ -24,6 +24,7 @@ Welcome to the documentation for My Blog website, a simple and user-friendly blo
 - Google Authentication System:
   - Users can log in using their Google accounts.
   - If registered with Google, users can access their personalized content.
+  - #### To be able to use google sign, user would need to run the application on either port number :5173 or :5174
 - Users can also logged in either with email or phone number
 
 ### 4. Day and Night Theme
