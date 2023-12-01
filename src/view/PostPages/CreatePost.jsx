@@ -40,6 +40,7 @@ function CreatePost() {
         await axios.post(`http://localhost:3030/posts/`,postData).then(toast("Your post has successfully added"))
         clearForm();
         navigate("/")
+        window.location.reload()
     }
   return (
     <>

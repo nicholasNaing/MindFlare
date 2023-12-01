@@ -14,6 +14,8 @@ import ScrollToTop from './ScrollRestoration/ScrollToTop'
 import UserPosts from './view/UserInformation/UserPosts'
 import ProtectedRoutes from './ProtectedRoute/ProtectedRoutes'
 import CreatePost from './view/PostPages/CreatePost'
+import PageNotFound from './404 not found/PageNotFound'
+import Banner from './layouts/Banner'
 
 
 function App() {
@@ -43,6 +45,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/register" element={<RegisterPage/>}/>
             <Route path="/login" element={<LoginPage/>}/>
+            <Route path="*" element={<PageNotFound/>}/>
           </Routes>
         </div>
       </Suspense>

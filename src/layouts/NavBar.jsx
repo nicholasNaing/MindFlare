@@ -46,7 +46,7 @@ function NavBar() {
                 <div className="flex flex-row gap-3 justify-evenly items-center my-3">
                     <NavLink to="/" className={`hidden sm:block`}>Home</NavLink>
                     {authToken ? 
-                    <div onClick={()=>setIsSidebar(!isSidebar)} className={`flex justify-center items-center gap-2 cursor-default`}>
+                    <div onClick={()=>setIsSidebar(!isSidebar)} className={`flex justify-center items-center gap-2 cursor-default font-semibold`}>
                         {name}<img src={profile} alt="profile_image" style={{width:"40px",height:"40px",borderRadius:"50%"}}/>
                     </div>: 
                     <NavLink to="/login">Log in</NavLink>

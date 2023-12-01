@@ -24,6 +24,7 @@ export const PostIdProvider = ({children})=>{
                 navigate("/") //get back to the home page after deletion
                 toast.info("You deleted the post") //informing the user
                 setDeletePost(false) //set the value back to false after the post deletion
+                setInterval(()=>{window.location.reload()},1000)
             }catch(error){
                 console.log(error)
             }

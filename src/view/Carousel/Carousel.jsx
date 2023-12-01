@@ -23,7 +23,7 @@ function CarouselFunction() {
         navigate(`posts/detail/${postId}`)
     }
     return (
-        <div className={isSidebar ? `pt-16 relative sm:w-[60%] sm:left-[40%] md:w-[70%] md:left-[30%] lg:w-[70%] lg:left-[30%]`:`pt-16`}>
+        <div className={isSidebar ? `relative sm:w-[60%] sm:left-[40%] md:w-[70%] md:left-[30%] lg:w-[70%] lg:left-[30%]`:``}>
             <h1 className="text-center mt-3 text-2xl font-bold">Feature Posts</h1>
             <div className="carousel-wrapper">
                 <Carousel breakPoints={breakPoints}>

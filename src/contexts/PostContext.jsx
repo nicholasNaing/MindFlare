@@ -14,8 +14,8 @@ export const FeaturePostsProvider = ({children})=>{
                 setFeaturePosts(posts)
             }
             fetchPosts();
-        }catch{
-            console.log("we have encounter some errors while fetching from local database")
+        }catch(error){
+            console.error(error)
         }
     },[])
     const [featureposts,setFeaturePosts] = useState([])
