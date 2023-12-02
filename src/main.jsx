@@ -13,7 +13,7 @@ import { PostIdProvider } from './contexts/PostDeleteContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename='/MindFlare/'>
+    <BrowserRouter>
       <AuthProvider>
         <ThemeChangeProvider>
           <PostIdProvider>

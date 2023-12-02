@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import Item from './Item';
-import Carousel from "react-elastic-carousel";
+import Carousel from '@itseasy21/react-elastic-carousel'
 import { useFeaturePost } from '../../contexts/PostContext';
 import { useSidebar } from '../../contexts/SidebarContext';
 import { useNavigate } from 'react-router-dom';
