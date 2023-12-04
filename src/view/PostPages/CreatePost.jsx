@@ -37,7 +37,7 @@ function CreatePost() {
             created_at:currentTime,
             userId:parseInt(userId)
         }
-        await axios.post(`http://localhost:3030/posts/`,postData).then(toast("Your post has successfully added"))
+        await axios.post(`http://127.0.0.1:3030/posts/`,postData).then(toast("Your post has successfully added"))
         clearForm();
         navigate("/")
         window.location.reload()

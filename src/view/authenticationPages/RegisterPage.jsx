@@ -69,7 +69,7 @@ function RegisterPage() {
         }else{ //if its new email, set the State and post the data into the database
             const currentDatetime = dayjs().format()   //used daysjs to get time as moment js is in maintaince as its status says
             const latestValidInfo = {profile_url:image,name,email,phone,password:hashPassword,created_at:currentDatetime}
-            await axios.post("http://localhost:3030/users",latestValidInfo)
+            await axios.post("http://127.0.0.1:3030/users",latestValidInfo)
             clearInput();
             successRegistrationNoti();
         }

@@ -31,8 +31,8 @@ export const AuthProvider = ({children})=>{
                 //below checked if the logged in info is email or phonenumber
                 //if its email, call api with or else, call the api with phone
                 const checkAuthenticateData = user.userInfo.includes("@") ? 
-                await axios.get(`http://localhost:3030/users?email=${user.userInfo}`).then(res=>res.data) :
-                await axios.get(`http://localhost:3030/users?phone=%2b${user.userInfo}`).then(res=>res.data)
+                await axios.get(`http://127.0.0.1:3030/users?email=${user.userInfo}`).then(res=>res.data) :
+                await axios.get(`http://127.0.0.1:3030/users?phone=%2b${user.userInfo}`).then(res=>res.data)
                 console.log(checkAuthenticateData[0]);
                 if(Object.keys(checkAuthenticateData).length > 0){   
                     //wasted a lot of time here

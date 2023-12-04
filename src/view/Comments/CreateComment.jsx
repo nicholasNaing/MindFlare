@@ -12,7 +12,7 @@ function CreateComment({postId}) {
     async function submitComment(postId){
         const commentData = {comment,userId,postId:parseInt(postId)}
         console.log(commentData);
-        await axios.post("http://localhost:3030/comments",commentData)
+        await axios.post("http://127.0.0.1:3030/comments",commentData)
         window.location.reload()
     }
   

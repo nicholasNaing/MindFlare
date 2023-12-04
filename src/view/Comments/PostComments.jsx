@@ -10,7 +10,7 @@ function PostComments({ postId }) {
         //gets the relevant comments for the current post and store it in state
         const fetchComments = async ()=>{
             try{
-                const commentsData = await axios.get(`http://localhost:3030/posts/${postId}/?_embed=comments`).then(res=>res.data)
+                const commentsData = await axios.get(`http://127.0.0.1:3030/posts/${postId}/?_embed=comments`).then(res=>res.data)
                 setComments(commentsData.comments)
             }catch(error){
                 console.log(error)

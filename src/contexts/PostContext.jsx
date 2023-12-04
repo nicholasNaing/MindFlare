@@ -10,7 +10,7 @@ export const FeaturePostsProvider = ({children})=>{
     useEffect(()=>{
         try {
             async function fetchPosts(){
-                const posts = await axios.get("http://localhost:3030/posts?_sort=id&_order=desc&_limit=10").then(res=>res.data)
+                const posts = await axios.get("http://127.0.0.1:3030/posts?_sort=id&_order=desc&_limit=10").then(res=>res.data)
                 setFeaturePosts(posts)
             }
             fetchPosts();
