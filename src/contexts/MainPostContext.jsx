@@ -29,7 +29,7 @@ export const MainPostProvider = ({children}) =>{
     useEffect(()=>{
         async function fetchPosts(){
             try{
-                const fetchMainPosts = await axios.get(`http://127.0.0.1:3030/posts?_page=${state.count}&_limit=${paginationLimit}`)
+                const fetchMainPosts = await axios.get(`https://mindflarejsondata.onrender.com/posts?_page=${state.count}&_limit=${paginationLimit}`)
                 .then(res=>{
                     const totalPosts = res.headers['x-total-count']//x-total-count gets the total number of posts
                     const totalPages = Math.ceil(totalPosts/paginationLimit)//this calulate the total pages for all the posts

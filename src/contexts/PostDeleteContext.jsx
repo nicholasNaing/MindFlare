@@ -20,7 +20,7 @@ export const PostIdProvider = ({children})=>{
     useEffect(()=>{
         if(deletePost){ //as i mentioned in detailPage component, the deletion process will begin as the value set to true
             try{
-                axios.delete(`http://127.0.0.1:3030/posts/${currentPostId}`)//api call to delete
+                axios.delete(`https://mindflarejsondata.onrender.com/posts/${currentPostId}`)//api call to delete
                 navigate("/") //get back to the home page after deletion
                 toast.info("You deleted the post") //informing the user
                 setDeletePost(false) //set the value back to false after the post deletion
@@ -36,7 +36,7 @@ export const PostIdProvider = ({children})=>{
         const fetchUser = async ()=>{
             try{
                 //in below api call, i could have just call the post to check its userId which is another way
-                const data = await axios.get(`http://127.0.0.1:3030/posts/${currentPostId}?_expand=user`).then(res=>res.data)
+                const data = await axios.get(`https://mindflarejsondata.onrender.com/posts/${currentPostId}?_expand=user`).then(res=>res.data)
                 console.log(data.user.id,userId)
                 data.user.id === userId ? setValidUserToPost(true) : setValidUserToPost(false)
             }catch(error){

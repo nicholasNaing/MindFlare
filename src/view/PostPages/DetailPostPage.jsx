@@ -33,9 +33,9 @@ function DetailPostPage() {
 
   const fetchDeatilPost = async ()=>{
     //fetch the post data with id from the url
-    const data = await axios.get(`http://127.0.0.1:3030/posts/${postId.id}`).then(res=>res.data)
+    const data = await axios.get(`https://mindflarejsondata.onrender.com/posts/${postId.id}`).then(res=>res.data)
     //to put the author name below post title, had to call another api to get the postAutor data
-    const userName = await axios.get(`http://127.0.0.1:3030/users/${data.userId}`).then(res=>res.data)
+    const userName = await axios.get(`https://mindflarejsondata.onrender.com/users/${data.userId}`).then(res=>res.data)
     //then use object destructuring, spread to add the additional data such as formatted date and author name
     const Detaildata = {...data,created_at:dayjs(data.created_at).format("DD-MMM-YYYY"),authorName:userName.name}
     setDetailPost(Detaildata)

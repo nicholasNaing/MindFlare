@@ -36,7 +36,7 @@ function Profile() {
     useEffect(()=>{
         async function fetchData(){
             try{
-                const data = await axios.get(`http://127.0.0.1:3030/users/?email=${email}`).then(res=>res.data)
+                const data = await axios.get(`https://mindflarejsondata.onrender.com/users/?email=${email}`).then(res=>res.data)
                 setUserInfo(data[0])
             }catch(error){
                 console.log(error)
@@ -81,7 +81,7 @@ function Profile() {
                         created_at:userInfo.created_at
                     }
                     try{
-                        await axios.put(`http://127.0.0.1:3030/users/${userInfo.id}`,EditedValidInfo)//here i used put method in place of patch.
+                        await axios.put(`https://mindflarejsondata.onrender.com/users/${userInfo.id}`,EditedValidInfo)//here i used put method in place of patch.
                         .then(toast("You have edited the profile.refresh the page for the changes to take effect"))
                         const userData = { //if there is data in update field, its fine 
                                            //or else current data wont change, in other words, the same data will be set in the local storage again
@@ -109,7 +109,7 @@ function Profile() {
         console.log(checkPassword);
         if(checkPassword){
             const hashNewpassword = await bcrypt.hash(newPassword,10)
-            axios.patch(`http://127.0.0.1:3030/users/${userInfo.id}`,{password:hashNewpassword})
+            axios.patch(`https://mindflarejsondata.onrender.com/users/${userInfo.id}`,{password:hashNewpassword})
             setOldPassword('')
             setNewPassword('')
             toast.success("You successfully changed your password")

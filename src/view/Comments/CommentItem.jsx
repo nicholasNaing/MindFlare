@@ -11,7 +11,7 @@ function CommentItem({comment}) {
   useEffect(()=>{
     const fetchCommentor = async()=>{
       try{
-        const commentOwner = await axios.get(`http://127.0.0.1:3030/comments/${comment.id}?_expand=user`).then(res=>res.data)
+        const commentOwner = await axios.get(`https://mindflarejsondata.onrender.com/comments/${comment.id}?_expand=user`).then(res=>res.data)
         setCommentor(commentOwner.user)
       }catch(error){
         console.log(error)
@@ -24,7 +24,7 @@ function CommentItem({comment}) {
     //below check again if loggedIn user === commentowner 
     //thou its not necessarily needed, neve wrong to double check
     if(userId === commentorId){
-      axios.delete(`http://127.0.0.1:3030/comments/${commentId}`) //delete the commend 
+      axios.delete(`https://mindflarejsondata.onrender.com/comments/${commentId}`) //delete the commend 
       window.location.reload()   //reload automatically for changes to take effect
     }
   }

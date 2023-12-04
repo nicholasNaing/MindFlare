@@ -23,7 +23,7 @@ function UserPosts() {
   }
   useEffect(()=>{
     const fetchUserPosts = async ()=>{
-      const postData = await axios.get(`http://127.0.0.1:3030/users/${userId}?_embed=posts`).then(res=>res.data)
+      const postData = await axios.get(`https://mindflarejsondata.onrender.com/users/${userId}?_embed=posts`).then(res=>res.data)
       setUserPosts(postData.posts)
     }
     fetchUserPosts();
