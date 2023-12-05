@@ -1,5 +1,12 @@
 # My MindFlare Documentation
 
+## Website address
+
+The above repo is the front end for the website MindFlare. The backend code which is just a JSON mock server is in this [Repository](https://github.com/nicholasNaing/mindflareJsonData) with its relevant JSON data. 
+The above repository is deployed with GitHub Pages and the JSON server is hosted on [Render](https://render.com/).
+
+[Website URL](https://nicholasnaing.github.io/MindFlare/)
+
 ## Overview
 
 Welcome to the documentation for My Blog website, a simple and user-friendly blog website. This documentation provides an overview of the key features and usage guidelines.
