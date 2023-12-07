@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { FeaturePostsProvider } from './contexts/PostContext.jsx'
 import { themeProvider as ThemeChangeProvider} from './contexts/ThemeContext'
 import { MainPostProvider } from './contexts/MainPostContext.jsx'
@@ -13,7 +13,7 @@ import { PostIdProvider } from './contexts/PostDeleteContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter basename={import.meta.env.DEV ? '/':'/MindFlare/'}>
+    <BrowserRouter basename={import.meta.env.DEV ? '/':'/MindFlare/'}>
       <AuthProvider>
         <ThemeChangeProvider>
           <PostIdProvider>
@@ -27,6 +27,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </PostIdProvider>
         </ThemeChangeProvider>
       </AuthProvider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
 )
