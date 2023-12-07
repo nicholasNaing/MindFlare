@@ -1,9 +1,10 @@
 import React from 'react'
 import { useDarktheme } from '../../contexts/ThemeContext'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import dayjs from 'dayjs'
 
 function PostItem({postItem}) {
+  console.log(useLocation().pathname,)
   const navigate = useNavigate()
   const handleRoute = ()=>{
     navigate(`posts/detail/${postItem.id}`)

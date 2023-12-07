@@ -42,6 +42,7 @@ function DetailPostPage() {
   }
 
   const paragraphPost = detailPost.content && detailPost.content.split("\n") 
+  console.log(useLocation().pathname,);
   return (
     <>
       {isSidebar && <Sidebar/>}
